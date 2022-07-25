@@ -1,0 +1,49 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 100px;
+    height: 100vh;
+}
+
+.home .logo img{
+    width: 136px;
+    height: 161px;
+    margin-bottom: 18px;
+}
+
+.home .logo{
+    color: #ffffff;
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .button{
+    background-color: #ffffff;
+    color: #d70900;
+    font-family: 'Recursive', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    border: 1px solid #D70900;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 246px;
+    height: 54px;
+}
+
+.escondido{
+    display: none;
+}

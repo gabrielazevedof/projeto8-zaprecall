@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    padding-left: 37px;
+    padding-right: 37px;
+}
+
+.main .logo{
+    color: #FFFFFF;
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 15px;
+}
+
+.main .logo img{
+    width: 52px;
+    height: 60px;
+}
