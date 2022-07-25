@@ -1,5 +1,8 @@
 import { useState } from "react"
 import spin from "../asstes/giro.png"
+import error from "../asstes/error.png"
+import duvida from "../asstes/duvida.png"
+import acerto from "../asstes/acerto.png"
 import "./styles.css"
 
 export default function Cards(){
@@ -33,6 +36,7 @@ const cards = [
 function Card({title, question, response}){
     console.log(title)
     let [card, setCard] = useState("Title")
+    let [answered, setAnswered] = useState("Answered")
     return(
         <>  
            {card === "Title" &&  
@@ -54,12 +58,32 @@ function Card({title, question, response}){
                 <div className="card-response">
                     {response}
                     <div className="performance">
-                        <div className="error">Não lembrei</div>
-                        <div className="almost">Quase não lembrei</div>
-                        <div className="zap">Zap!</div>
+                        <div className="error" onClick={() => setAnswered("Error") } >Não lembrei</div>
+                        <div className="almost" onClick={() => setAnswered("Almost") } >Quase não lembrei</div>
+                        <div className="zap" onClick={() => setAnswered("Right") } >Zap!</div>
                     </div>
+                </div>
+
+            }
+            { answered === "Error" &&
+                <div className="card-error">
+                    {title}
+                    <img src={error} alt="error" />
+                </div>
+            }
+            { answered === "Almost" &&
+                <div className="card-almost">
+                    {title}
+                    <img src={duvida} alt="duvida" />
+                </div>
+            }
+            { answered === "Right" &&
+                <div className="card-right">
+                    {title}
+                    <img src={acerto} alt="acerto" />
                 </div>
             }
         </>
     )
 }
+

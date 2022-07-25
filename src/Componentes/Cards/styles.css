@@ -133,3 +133,78 @@
     width: 85px;
     height: 37px;
 }
+
+.card-error{
+    background-color: #FFFFFF;
+    color: #FF3030;
+    font-family: 'Recursive';
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: line-through;
+
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px 0px #00000026;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 300px;
+    height: 65px;
+    padding: 15px;
+}
+
+.card-error img{
+    width: 23px;
+    height: 23px;
+}
+
+.card-almost{
+    background-color: #FFFFFF;
+    color: #FF922E;
+    font-family: 'Recursive';
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: line-through;
+
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px 0px #00000026;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 300px;
+    height: 65px;
+    padding: 15px;
+}
+
+.card-almost img{
+    width: 23px;
+    height: 23px;
+}
+
+.card-right{
+    background-color: #FFFFFF;
+    color: #2FBE34;
+    font-family: 'Recursive';
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: line-through;
+
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px 0px #00000026;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 300px;
+    height: 65px;
+    padding: 15px;
+}
+
+.card-right img{
+    width: 23px;
+    height: 23px;
+}
